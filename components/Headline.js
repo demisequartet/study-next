@@ -2,14 +2,11 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 
 export function Headline(props) {
-  console.log(props.title);
+  console.log(props);
   return (
     <div>
       <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>pages/{props.title}</code>
-        </p>
+        <p>Get started by editing {props.children}</p>
         <div>
           <a
             href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
